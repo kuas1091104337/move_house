@@ -32,7 +32,11 @@ footer{
       display:flex;
       justify-content:center;
     }
-    li + li{margin:0 0 0 25px;}
+    li{
+      background-image:linear-gradient(0deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+      margin:0;
+      + li{margin:0 0 0 30px;}
+    }
     a{padding:0 16px;}
   }
 }

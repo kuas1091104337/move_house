@@ -1,18 +1,22 @@
 article{
-  padding: 30px;
-  > ul, > .img-box{
-    max-width:1024px;
-    margin:0 auto 30px;
+  color:$db;
+  line-height: 40px;
+  padding:10px;
+  > ul, > div{
+    background-size:10px 10px;
+    padding: 20px;
   }
-  li + li{margin-top: 30px;}
-  a{
-    color:#333;
-    line-height: 50px;
-    // text-align:center;
-    width: 100%;
-    height: 50px;
-    background-color:#eee;
-    padding:0 16px;
+  > ul, > .content-box{
+    background-image:linear-gradient(135deg, transparent 46%, $lb 46%, $lb 54%, transparent 54%);
+  }
+  > .img-box{
+    background-image:linear-gradient(45deg, transparent 46%, $lb 46%, $lb 54%, transparent 54%);
+  }
+  > ul ~ div{margin-top:10px;}
+  li{
+    background-image:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    padding:0 12px;
+    + li{margin-top:20px;}
   }
   img{
     width: 100%;
@@ -20,14 +24,35 @@ article{
     display: block;
     margin:0 auto;
   }
+  > .content-box{
+    > p{
+      text-shadow:0 1px 2px #fff;
+      background-color:rgba(255,255,255,0.6);
+      padding: 10px;
+      margin:0;
+    }
+  }
 }
 @media screen and (min-width: 768px){
   article{
+    padding:15px;
+    > .div{padding:30px;}
+    > .content-box > p{padding:0 10px;}
     > ul{
       display:flex;
-      justify-content:center;
+      flex-wrap:wrap;
+      justify-content:space-evenly;
+      padding:15px 0;
     }
-    li + li{margin:0 0 0 25px;}
+    li{
+      text-align:center;
+      background-image:linear-gradient(0deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.3) 100%);
+      flex:0 0 200px;
+      box-shadow: 1px 1px 3px 1px rgba($db, .6),
+                  1px 1px 1px 1px rgba(255,255,255,.6) inset;
+      margin:15px 0;
+      + li{margin-top:15px;}
+    }
   }
 }
 @media screen and (min-width: 1024px){
