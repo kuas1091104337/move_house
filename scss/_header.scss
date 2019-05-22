@@ -21,6 +21,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
+  z-index:1;
   > #logo{
     color:$ly;
     font-size:1em;
