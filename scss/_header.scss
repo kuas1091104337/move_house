@@ -46,7 +46,7 @@ header{
     top:0;
     left:0;
     transform:translate(100%);
-    transition: .4s;
+    transition:transform .4s;
   }
   li + li{margin-top:20px;}
   a{
