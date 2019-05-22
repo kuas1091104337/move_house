@@ -99,10 +99,15 @@ header{
 }
 @media screen and (min-width:1024px){
   header{
+    height: 56px;
+    padding:10px;
     > ul{
       width:auto;
+      background-image:linear-gradient(135deg, transparent 46%, $lg 46%, $lg 54%, transparent 54%);
+      background-size:10px 10px;
       display:flex;
       justify-content:center;
+      overflow:initial;
       padding: 0;
       position: relative;
       transform:translate(0);
@@ -110,6 +115,9 @@ header{
     li + li{margin:0 0 0 20px;}
     a{
       line-height: 36px;
+      background-image:linear-gradient(0deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 100%);
+      box-shadow: 1px 1px 3px 1px rgba($dg, .5),
+                  1px 1px 2px rgba(255,255,255,.35) inset;
       padding:0 9px;
     }
     > .m_menu{display: none;}

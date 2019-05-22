@@ -50,13 +50,13 @@ article{
       flex:0 0 200px;
       box-shadow: 1px 1px 3px 1px rgba($db, .6),
                   1px 1px 1px 1px rgba(255,255,255,.6) inset;
-      margin:15px 0;
+      margin:15px 10px;
       + li{margin-top:15px;}
     }
   }
 }
 @media screen and (min-width: 1024px){
   article{
-    li + li{margin-left:30px;}
+    // li + li{margin-left:30px;}
   }
 }
