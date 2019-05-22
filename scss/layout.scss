@@ -1,3 +1,9 @@
+$lg:#82a75a;
+$dg:#00442b;
+$ly:#ecefe6;
+$lb:#65acca;
+$db:#00598b;
+$menu-height:50px;
 @import "normalize";
 // ---css共用區(常用預設值)---
 html, body, header, article, footer{min-width:320px;}
@@ -20,28 +26,7 @@ a{
     text-decoration:none;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
-.notSelect{user-select: none;} // 不能選取反白的設定
 *, *:before, *:after{box-sizing:border-box;}
-.img_rwd{
-    width:100%;
-    height:auto;
-}
-$DG:#123b03;
-$LG:#8ead72;
-$GP:#5e5c8d;
-
-$green:#488647;
-$blueGreen:#8ac5c3;
-$red:#cb353e;
-$yellow:#eef257;
-
-$lg:#82a75a;
-$dg:#00442b;
-$ly:#ecefe6;
-$lb:#65acca;
-$db:#00598b;
-
-$menu-height:50px;
 @import "header";
 @import "index";
 @import "footer";
