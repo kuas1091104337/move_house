@@ -7,7 +7,7 @@ article{
     transform:skew(-6deg);
   }
   > h2{
-    padding-left: 20px;
+    padding:0 20px;
     margin:.5em 0;
   }
   > ul, > div{
@@ -22,7 +22,10 @@ article{
       padding: 10px;
       margin:0;
     }
-    a{color:$db;}
+    a{
+      color:$db;
+      + a{margin-top:20px;}
+    }
   }
   > .img-box{padding-top:1px;}
   > ul ~ div{margin-top:10px;}
