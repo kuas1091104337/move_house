@@ -2,21 +2,23 @@ article{
   color:$db;
   line-height: 40px;
   padding:10px;
-  > h2, p, a{
+  > h2{
     font-weight: normal;
     transform:skew(-6deg);
   }
+  p, a{transform:skew(-4deg);}
   > h2{
     padding:0 20px;
     margin:.5em 0;
   }
   > ul, > div{
-    background-image:linear-gradient(135deg, transparent 46%, $lb 46%, $lb 54%, transparent 54%);
-    background-size:8px 8px;
+    background-image:linear-gradient(135deg, transparent 46%, rgba($lb, .25) 46%, rgba($lb, .25) 54%, transparent 54%);
+    background-size:10px 10px;
     padding: 20px;
   }
   > .content-box{
     > h3{
+      font-weight: normal;
       text-shadow:0 1px 2px #fff;
       background-color:rgba(255,255,255,0.8);
       padding: 10px;
@@ -24,6 +26,10 @@ article{
     }
     a{
       color:$db;
+      &:visited, &:hover{
+        color:$lb;
+        text-decoration:underline;
+      }
       + a{margin-top:20px;}
     }
   }
