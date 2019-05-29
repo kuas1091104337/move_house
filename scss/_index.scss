@@ -64,12 +64,18 @@ article{
     }
     li{
       text-align:center;
+      background-color:rgba($lb, 0);
       background-image:linear-gradient(0deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,0.3) 100%);
       flex:0 0 200px;
       box-shadow: 1px 1px 3px 1px rgba($db, .6),
                   1px 1px 1px 1px rgba(255,255,255,.6) inset;
       margin:15px 10px;
+      transition:background-color .4s;
       + li{margin-top:15px;}
+      &:hover{
+        background-color:rgba($lb, .35);
+        background-image:none;
+      }
     }
     > .img-box{
       display:flex;
