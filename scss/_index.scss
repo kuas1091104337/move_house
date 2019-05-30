@@ -2,20 +2,24 @@ article{
   color:$db;
   line-height: 40px;
   padding:10px;
-  > h2{
+  > h2, li > h3{
     font-weight: normal;
-    transform:skew(-6deg);
+    transform:skew(-4deg);
   }
-  p, a{transform:skew(-4deg);}
   > h2{
     padding:0 20px;
     margin:.5em 0;
+  }
+  li > h3{
+    text-shadow:1px 1px 1px #fff;
+    margin:0;
   }
   > ul, > div{
     background-image:linear-gradient(135deg, transparent 46%, rgba($lb, .25) 46%, rgba($lb, .25) 54%, transparent 54%);
     background-size:10px 10px;
     padding: 20px;
   }
+  > ul ~ div{margin-top:10px;}
   > .content-box{
     > h3{
       font-weight: normal;
@@ -26,36 +30,33 @@ article{
     }
     a{
       color:$db;
+      transform:skew(-4deg);
       &:visited, &:hover{
         color:$lb;
         text-decoration:underline;
       }
-      + a{margin-top:20px;}
     }
   }
   > .img-box{padding-top:1px;}
-  > ul ~ div{margin-top:10px;}
   li{
     background-image:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     padding:0 12px;
     + li{margin-top:20px;}
   }
   p{
-    text-shadow:1px 1px 1px #fff;
-    margin:0;
-  }
-  img{
-    width: 100%;
     max-width:354px;
     display: block;
     margin:20px auto 0;
+  }
+  img{
+    width: 100%;
+    display: block;
   }
 }
 @media screen and (min-width: 768px){
   article{
     padding:15px;
     > .div{padding:30px;}
-    > .content-box > p{padding:0 10px;}
     > ul{
       display:flex;
       flex-wrap:wrap;
@@ -82,7 +83,7 @@ article{
       flex-wrap:wrap;
       align-items:center;
     }
-    img{max-width:320px;}
+    p{max-width:320px;}
   }
 }
 @media screen and (min-width: 1024px){
@@ -91,12 +92,9 @@ article{
       justify-content:space-evenly;
       padding-bottom: 40px;
     }
-    img{
+    p{
       max-width:430px;
       margin:40px 20px 0;
     }
   }
-}
-@media screen and (min-width: 1024px){
-  article img{max-width:450px;}
 }
