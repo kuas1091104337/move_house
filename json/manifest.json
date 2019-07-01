@@ -10,22 +10,22 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/images/android-icon-48x48.png",
+      "src": "/move_house/images/android-icon-48x48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "/images/android-icon-96x96.png",
+      "src": "/move_house/images/android-icon-96x96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/images/android-icon-144x144.png",
+      "src": "/move_house/images/android-icon-144x144.png",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "/images/android-icon-192x192.png",
+      "src": "/move_house/images/android-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
