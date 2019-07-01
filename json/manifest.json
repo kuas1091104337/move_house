@@ -1,0 +1,34 @@
+{
+  "short_name": "雙寶搬家公司",
+  "name": "搬家找雙寶最可靠，CP值超高。",
+  "description": "公司搬家、 家庭搬家、 套房搬家、 貨運搬家、 基隆搬家、 新北搬家、 台北搬家、 桃園搬家、 新竹搬家、 中南部回頭車搬家、 搬家便宜、 搬家打包、 紙箱、 貨運、 move house、 change dwelling place",
+  "theme_color": "#00442b",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "dir": "rtl",
+  "lang": "zh-Hant-TW",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/android-icon-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/images/android-icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/images/android-icon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/images/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "../index.html"
+}
